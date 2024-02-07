@@ -12,3 +12,9 @@ fs.writeFile(myFilePath , myContent ,(err) =>{
     console.log('File added succesfully.');
 });
 
+//Adding text to readMe.md
+const addedText="\nYoussef added this."
+fs.appendFile(myFilePath, addedText, (err) =>{
+    err ? console.log(err): console.log("Appended succesfully.")
+})
+
